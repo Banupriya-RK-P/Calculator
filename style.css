@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f2f4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: linear-gradient(135deg, #667eea, #764ba2); */
+    background-image: url(images/backgroundimage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Main calculator box */
+.main_container{
+    width: 320px;
+    background: #1e1e2f;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Display section */
+.show_result{
+    background: #2c2c3f;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    
+}
+
+#display_text{
+    width: 100%;
+    height: 4vh;
+    padding: 10px;
+    color: #bbb;
+    font-size: 14px; 
+    text-align: right;
+   
+}
+
+#input_box{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    text-align: right;
+    border: 1px solid rgb(125, 125, 143);
+   
+}
+
+/* Buttons grid */
+.buttons_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.number_boxes button{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #3a3a52;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Hover effect */
+.number_boxes button:hover{
+    background: #505070;
+}
+
+/* Equal button special */
+#equal_button{
+    background: #ff7a18;
+}
+
+#equal_button:hover{
+    background: #ff9b3d;
+}
+
+/* Clear button */
+#clear_button{
+    background: #ff4d4d;
+}
+
+#clear_button:hover{
+    background: #ff6b6b;
+}

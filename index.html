@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.JPG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="main_container">
+        <h2 style="text-align: center; color: blueviolet; margin-bottom: 10px;">Calculator</h2>
+        <div class="show_result">
+            <p id="display_text"></p>
+            <input type="text" id="input_box">
+        </div>
+        <div class="buttons_container">
+            <div class="number_boxes" ><button type="button" id="percentage_button" onclick="update(event)">%</button></div>
+            <div class="number_boxes"><button type="button" id="clear_button" onclick="main()">C</button></div>
+            <div class="number_boxes"><button type="button" id="division_button" onclick="update(event)">/</button></div>
+            <div class="number_boxes"><button type="button" id="remove_button" onclick="updat(event)"><i class="fa-solid fa-delete-left" style="font-size: 20px;"></i></button></div>
+            <div class="number_boxes"><button type="button" id="7_button" onclick="update(event)">7</button></div>
+            <div class="number_boxes"><button type="button" id="8_button" onclick="update(event)">8</button></div>
+            <div class="number_boxes"><button type="button" id="9_button" onclick="update(event)">9</button></div>
+            <div class="number_boxes"><button type="button" id="addition_button" onclick="update(event)">+</button></div>
+            <div class="number_boxes"><button type="button" id="4_button" onclick="update(event)">4</button></div>
+            <div class="number_boxes"><button type="button" id="5_button" onclick="update(event)">5</button></div>
+            <div class="number_boxes"><button type="button" id="6_button" onclick="update(event)">6</button></div>
+            <div class="number_boxes"><button type="button" id="subtraction_button"onclick="update(event)">-</button></div>
+            <div class="number_boxes"><button type="button" id="1_button" onclick="update(event)">1</button></div>
+            <div class="number_boxes"><button type="button" id="2_button" onclick="update(event)">2</button></div>
+            <div class="number_boxes"><button type="button" id="3_button" onclick="update(event)">3</button></div>
+            <div class="number_boxes"><button type="button" id="multiplication_button" onclick="update(event)">*</button></div>
+            <div class="number_boxes"><button type="button" id="minus_button" onclick="updat(event)">+/-</button></div>
+            <div class="number_boxes"><button type="button" id="0_button" onclick="update(event)">0</button></div>
+            <div class="number_boxes"><button type="button" id="dot_button" onclick="update(event)">.</button></div>
+            <div class="number_boxes"><button type="button" id="equal_button">=</button></div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
